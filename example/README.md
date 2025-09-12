@@ -1,70 +1,190 @@
 <h1>
   <span>姓名</span>
   <ul>
-    <li><span>电话</span>xxx xxxx xxxx</li>
-    <li><span>微信</span>xxxxxxxxxxx</li>
-    <li><span>邮箱</span><a href="mailto:ko.momo@qq.com">ko.momo@qq.com</a></li>
-    <li><span>Github</span><a>github.com/komomoo</a></li>
+    <li><span>电话</span>156 5075 0743</li>
+    <li><span>微信</span>tymtangyumeng</li>
+    <li><span>邮箱</span><a href="mailto:tangyumeng@gmail.com">tangyumeng@gmail.com</a></li>
   </ul>
 </h1>
 
-## 教育经历
-
-硕士 xxxxxxxx大学 软件工程 <span class="right">2014.09 - 2017.06</span><br>
-本科 xxxxxxxxxxxx大学 电子信息工程 <span class="right">2010.09 - 2014.06</span>
 
 ## 工作经历
 
-xxxxxxxxxxxx公司(初创)-xxxxx部门 xxxxxxx岗位<span class="right">2016.07 - 至今</span><br>
-xxxxxxxxxxxx公司(上市)-xxxxxxxxx部门 xxxxxxx岗位<span class="right">2014.07 - 2016.07</span>
+面壁智能 - iOS&Android研发<span class="right">2024.2 - 至今</span><br>
+北京梦想绽放技术有限公司(爱奇艺智能) - 资深研发工程师<span class="right">2022.02 - 2023.05</span><br> 
+北京爱奇艺科技有限公司‌ - 资深研发工程师<span class="right">2020.09 - 2021.11</span><br> 
+美图秀秀 - 资深研发工程师<span class="right">2018.05 - 2019.9</span><br> 
+滴滴出行 - 高级研发工程师<span class="right">2015.09 - 2018.05</span><br> 
 
-- 获得荣誉：**xxxxxxxxxxxxxxxxxxxxxx**
 
 ## 项目经验
 
-### 项目一名称<span class="role">:&nbsp;职责</span><span class="right">2018.01 - 至今</span>
+### 面壁智能：车机芯片模型端侧SDK <span class="role">:&nbsp;Android工程师</span><span class="right">2025.02 - 至今</span>
 
-- 技术栈：**XXX Xxxx**
-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。
-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。
-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。
-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。
+- 技术栈：**Kotin Java**    
 
----
+**项目背景：** 为公司端侧 AI 模型提供 Android JNI 层 SDK 封装，提升模型在车机和移动端的可用性与易接入性，支持多家客户接入端侧 AI 功能。
 
-### 项目二名称<span class="role">:&nbsp;核心开发者</span><span class="right">2017.01 - 2018.01</span>
 
-- 技术栈：**XXX Xxxx + Xxx Xxxxxx + Xxxxxx**
-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。
-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。
-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。
-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。
+**主要工作：**  
 
----
+- 设计并实现 JNI 层封装工程，将底层 C/C++ 模型 so 库通过 JNI 暴露给上层应用，输出标准化 Android AAR SDK，简化客户集成流程。
 
-### 项目三名称<span class="role">:&nbsp;项目负责人</span><span class="right">2016.01 - 2017.01</span>
+- 撰写完整技术文档（接入指南、API 说明、FAQ），并提供一对一技术支持，缩短客户接入周期。
 
-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。
-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。
-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。
+- 深入解决车机 Android 系统差异问题：兼容系统级安装与普通安装模式，解决 so 库加载、动态库权限、路径访问限制等兼容性问题，保证 SDK 在多厂商车机环境稳定运行。
+
+- 提供批量测试模型结果功能，输入云端效果数据源，批量生成端侧结果。
+
+- 优化 SDK 构建流程，实现一键编译、自动化产出 AAR，提升研发与测试效率。
+
+- 开发 SDK 自动发版平台、发版完成后，自动启动批量端侧评测任务。同步结果、进度至内部平台上。
+
+成果与价值：成功支持多家车企/客户量产接入端侧模型。提高客户接入效率，同时维护多个芯片平台、多个客户需求对接等需求。提高模型功能落地效率。
 
 ---
 
-### 项目四名称<span class="role">:&nbsp;项目维护</span><span class="right">2015.01 - 2016.01</span>
+### 面壁智能：时空壶模型SDK<span class="role">:&nbsp;Android工程师</span><span class="right">2025.3 - 至今</span>  
+- 技术栈：Kotlin、Java、CMake、JNI
 
-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。
-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。
-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX。
+**项目背景：** 负责端侧翻译功能的 Android SDK 设计与实现，协同算法团队和后端团队，落地端侧翻译模型，并设计模型加密与授权机制，实现客户按激活设备数付费的商业目标。
+
+**主要工作：**
+
+- 配置与优化 CMakeLists.txt，高效集成算法团队提供的模型 so 库，确保模型功能在多种 Android 车机与移动终端上稳定运行
+
+- 设计并实现 JNI 封装层，将底层模型能力以简洁、稳定的 API 形式暴露给上层应用，产出标准化 AAR SDK，降低客户接入门槛
+
+- 编写接入文档与技术指南，并提供远程技术支持，协助客户快速完成端侧功能集成
+
+- 实现模型加密与授权逻辑：根据商务合作需求，设计设备级授权、密钥管理及验证流程，支持按激活设备数计费，提升模型商业化能力
+
+- 推动跨团队协作：与算法、后端、商务及客户团队沟通，明确接口、加密策略和异常处理方案，确保模型上线过程顺利
+
+**成果与价值：**
+
+- 缩短客户集成时间约 40%，降低接入人力成本
+
+- 提升模型安全性，防止未授权调用，有效支持公司商业化收费策略
+
+- SDK 已成功部署于客户的量产系统，保持长期稳定运行。
+
+---
+
+### 面壁智能：纸飞机<span class="role">:&nbsp;iOS开发工程师</span><span class="right">2024.2 - 2025.2</span>
+
+**项目背景：** 公司 C 端情感陪伴类产品：用户可输入兴趣偏好等个性化特征，与智能体进行实时聊天互动，提升用户粘性与留存率。当前 C 端产品已不再维护，公司转作 B 端业务。
+
+- 独立负责 iOS 端功能开发与迭代，基于 Swift & Objective-C 实现聊天、用户画像配置等核心功能，保证交互体验流畅
+- 优化 App 性能与稳定性：分析启动时间、内存占用、CPU 消耗，进行关键路径优化，保证流畅度与低崩溃率
+- 跨团队协作：与后端、产品、设计团队紧密配合，推动需求评审、接口联调和交付上线
+
+**成果与价值：**
+
+- 提升 App 稳定性，崩溃率维持在行业低水平
+- 缩短测试与发布周期 30%+，显著提升迭代效率
+- 帮助产品快速迭代上线，提升用户日活和留存
+
+---
+
+### 爱奇艺智能 - 奇遇VR app<span class="role">:&nbsp;资深iOS开发工程师</span><span class="right">2022.03 - 2023.02</span>
+**项目背景：** 公司开发多款头戴式 VR 设备，C 端 App 提供应用商城、社区互动、用户账号管理等功能，是 VR 硬件的重要入口和用户增长渠道。
+- 参与技术选型与业务开发：评估并选用合适的架构和播放器方案，负责核心页面交互和业务逻辑实现，保证多机型兼容和流畅体验。
+- 组件化与复用优化：将 App 内多处使用的列表 Cell 抽象为数据驱动配置组件，实现类型安全、可扩展的配置方式，大幅减少列表页面开发工作量，提高代码复用率。
+- 持续集成与自动化发布：编写 Jenkins 脚本实现自动打包、签名、上传 TestFlight；集成 dSYM 上传到 Bugly，监控崩溃率并分析问题根因，保障 App 稳定性。
+- 参与奇遇 VR App 项目开发：支持应用商城、社区模块的迭代开发与优化，推动上线多个关键功能。
+
+**成果与价值：**
+
+- 列表组件抽象后，类似页面开发效率提升约 40%，降低重复代码量
+- 崩溃率下降至行业低水平，提升用户满意度和留存率
+- 自动化发版流程减少人工操作时间，缩短测试/上线周期
+
+### 爱奇艺 - 随刻 app<span class="role">:&nbsp;资深iOS开发工程师</span><span class="right">2020.09 - 2021.11.30</span>
+**项目背景：** 随刻 App 是爱奇艺推出的视频兴趣社区产品，涵盖视频观看、创作分享、社区互动等多元场景。我主要负责搜索业务的架构设计与核心功能开发，确保搜索模块在快速迭代下保持高性能与高可扩展性。  
+
+**主要工作：**
+
+**架构与技术选型**
+
+  - 主导搜索业务架构选型，设计并实现 搜索模块和页面开发框架，提升代码复用性与迭代效率
+
+  - 在平衡前后端工作量的前提下，设计后台模版和后端数据驱动客户端页面元素的方案，实现动态化页面渲染
+
+  - 设计并实现页面数据埋点统计方案，使统计数据可通过后端模板自动上报，降低前端埋点人力成本
+
+  - 支持后端跳转数据与客户端 UI 元素的自动绑定，减少手动开发工作量
+
+**核心业务开发**
+
+  - 开发首页推荐、追吧、电影、电视剧等频道功能，沉淀通用技术方案，支撑首页多场景业务的快速迭代
+
+  - 实现多场景视频播放进度同步，包括搜索结果页与首页推荐入口，提升用户体验
+
+  - 支持多个搜索关键词（电视剧、动漫等）场景的结果展示与业务逻辑，确保搜索功能覆盖多品类内容
+
+**成果与价值：**
+
+  - 搜索框架上线后，页面开发效率提升约 30%，显著缩短业务上线周期
+
+  - 降低前端埋点开发成本，减少运维错误率
+
+  - 统一搜索模块架构，提升了后续业务迭代的稳定性和可维护性
+
+### 美图秀秀 - 美志项目&美图秀秀社区<span class="role">:&nbsp;资深iOS开发工程师</span><span class="right">2018.05 – 2019.09</span>
+### 美志项目&美图秀秀社区<span class="right">2018.05 – 2019.09</span>
+**项目背景：** 负责公司内部“美志”项目研发，该项目通过聚合第三方新闻数据，为用户提供新闻阅读体验，并以 SDK 形式对接入的多条业务线开放，旨在提升用户留存和使用时长。后期参与美图秀秀社区模块需求开发与迭代。
+
+**主要工作：**
+
+**SDK 设计与开发：**
+
+- 设计并实现新闻 Feed 分类列表、详情页浏览功能，支持多种新闻源聚合
+
+- 封装广告组件并无缝集成至新闻流，提高广告填充率和点击率
+
+- 提供高可扩展的 SDK 接口，便于其他业务线快速接入，降低二次开发成本
+
+**业务需求落地：**
+
+- 支持美图秀秀社区功能开发，参与社区内容流、互动模块迭代，实现更丰富的用户互动场景
+
+- 参与发布流程相关功能迭代，优化内容审核、发布链路，提高社区内容分发效率
+
+**成果与价值：**
+
+- "美志" SDK 成功接入多款公司内产品，显著提升用户停留时长与日活
+
+- 新闻流及广告功能上线后，广告曝光和点击率均有明显提升
+
+- 优化了社区功能开发与发版流程，加速了版本迭代节奏
+
+
+### 滴滴出行 - 乘客端<span class="role">:&nbsp;高级&资深iOS开发工程师</span><span class="right">2015.09 - 2018.05</span>
+### 乘客端<span class="right">2015.09 - 2018.05</span>
+**项目背景：** 经历滴滴快速成长期，参与多个项目开发。参与业务开发，支撑类功能开发，提供统一接入方式，支持业务线接入工作。
+
+**主要工作:**
+- 参与平台部门使用 CocoaPods 对原本耦合度较高的多业务模块进行拆分，重构工程结构，提升代码可维护性和独立迭代能力
+- 支持滴滴公交、滴滴代驾等业务的需求迭代，保证功能快速上线并稳定运行
+- 将地图能力抽象为可复用组件，提供统一接口，支持乘客端和司机端快速接入地图服务，减少重复开发
+
+
+
+## 教育经历
+
+本科 南阳理工学院 软件工程<span class="right">2008.09 - 2012.07</span>
 
 ## 技能描述
+- 移动端开发：多年 iOS 开发经验，熟练使用 Swift 与 Objective-C，掌握 UIKit、多线程、内存管理、网络层设计、组件化开发、性能优化及崩溃率监控
 
-- 了解 XXXXXXXXXXXXXXXXXXX，**掌握 XXXXXXXXXXXXX**
-- 熟悉 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-- 了解 XXXXX，XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-- 掌握 XXXXXXXXXX，XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-- XXXXXXXXXXXXXXXXXXXX，XXXXXXXXXXXXX
+- 跨平台经验：具备 Android 原生开发经验，熟悉 Kotlin / Java，掌握 JNI Module 封装，能实现 C/C++ 模型与 Android 应用的高效交互
 
-## 自我评价
+- 架构设计：熟悉 MVVM、MVP、组件化架构，具备 SDK 封装、动态化页面、埋点体系设计能力，能沉淀通用技术方案提高业务迭代效率
 
-- XXXXXXXXXXXXXXXXXXXXXXXXXXX,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+- 工具与流程：熟练使用 CocoaPods、Gradle、CMake、Jenkins、TestFlight，能够搭建持续集成与自动化发版流程
+
+- 协作与落地：具备跨团队协作经验，能与算法、后端、产品、商务团队协作落地端侧 AI 模型、加密授权和业务功能，实现商业目标
+
+
+
